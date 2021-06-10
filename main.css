@@ -31,7 +31,7 @@ h1 {
 }
 
 .main {
-  width: 20vw;
+  width: 40vh;
   height: 7vh;
   top: 75%;
   background: rgba(255, 255, 255, 0.151);
@@ -53,9 +53,9 @@ h1 {
 }
 
 #timer {
-  font-size: 10vw;
+  font-size: 10vh;
   text-align: center;
-  padding: 20px;
+  padding: 20vh;
   text-shadow: 1px 5px 45px rgb(0, 0, 0);
 }
 
@@ -97,9 +97,9 @@ h1 {
 }
 
 .flexcontainer {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+
   justify-content: center;
   display: flex;
 }
@@ -107,11 +107,11 @@ h1 {
 .flex-item {
   background: rgba(255, 255, 255, 0.36);
   box-shadow: 0px 0px 15px 2px rgba(255, 255, 255, 0.062);
-  border-radius: 20vw;
+  border-radius: 20vh;
   /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
   border: 0px;
-  padding: 0.5vw 1vw 0.5vw 1vw;
-  margin: 0.5vw;
+  padding: 1vh 2vh 1vh 2vh;
+  margin: 1vh;
   color: white;
   font-size: 2.5vh;
   text-shadow: 0 2px 4px rgb(71 97 206 / 36%);
@@ -144,8 +144,8 @@ h1 {
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -1vw;
-  left: -1vw;
+  right: -2vh;
+  left: -2vh;
   transition: 0.5s;
 }
 
@@ -160,12 +160,11 @@ h1 {
 }
 
 .round {
-  width: 20vw;
+  width: 40vh;
   height: 40vh;
   position: relative;
-  top: 30%;
-  left: 40%;
-  justify-content: center;
+  top: 1vh;
+  margin: 2vh auto;
   border-radius: 50%;
   background: var(--status);
   overflow: hidden;
@@ -195,23 +194,23 @@ h1 {
 }
 
 .tempopassato {
-  font-size: 4vw;
+  font-size: 8vh;
   color: #ffffff;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.205);
 }
 
 .bar {
-  left: 40vw;
-  width: 20vw;
+  margin: 0 auto;
+  width: 40vh;
   height:1vh;
-  top: 0.1vh;
+  top: 1vh;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
 }
 .bar2 {
   left: 0;
   width: 0%;
-  height:10px;
+  height:1vh;
   
   position: relative;
   background-color: rgb(209, 255, 149);
@@ -220,37 +219,37 @@ h1 {
 
 .point1 {
   position: absolute;
-  height: 2.1vw;
-  width: 2.1vw;
+  height: 4vh;
+  width: 4vh;
   top: -150%;
-  left: -0.1vw;
+  left: -1%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
 }
 .point2 {
   position: absolute;
-  height: 2.1vw;
-  width: 2.1vw;
+  height: 4vh;
+  width: 4vh;
   top: -150%;
-  left: 6vw;
+  left: 30%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
 }
 .point3 {
   position: absolute;
-  height: 2.1vw;
-  width: 2.1vw;
+  height: 4vh;
+  width: 4vh;
   top: -150%;
-  left: 12vw;
+  left: 60%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
 }
 .point4 {
   position: absolute;
-  height: 2.1vw;
-  width: 2.1vw;
+  height: 4vh;
+  width: 4vh;
   top: -150%;
-  left: 18vw;
+  left: 91%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
 }
@@ -310,7 +309,7 @@ h1 {
 .wave1,
 .wave2 {
   height: 15vh;
-  position: relative;
+  position: absolute;
   width: 100vw;
   z-index: 12;
   left: 0;
@@ -345,7 +344,7 @@ h1 {
     background-position: 0 0;
   }
   100% {
-    background-position: 1601px 0;
+    background-position: 160vw 0;
   }
 }
 @-moz-keyframes wave-animation1 {
@@ -353,7 +352,7 @@ h1 {
     background-position: 0 0;
   }
   100% {
-    background-position: 1601px 0;
+    background-position: 160vw 0;
   }
 }
 @-o-keyframes wave-animation1 {
@@ -361,7 +360,7 @@ h1 {
     background-position: 0 0;
   }
   100% {
-    background-position: 1601px 0;
+    background-position: 160vw 0;
   }
 }
 @keyframes wave-animation1 {
@@ -369,16 +368,21 @@ h1 {
     background-position: 0 0;
   }
   100% {
-    background-position: 1601px 0;
+    background-position: 160vw 0;
   }
 }
 
 .wave1 {
   background: url("http://www.templates-preview.com/bootstrap-templates/300111854/images/wave1.png")
     0 0 repeat-x;
+    top:0px;
+  left:0px;
 }
 .wave2 {
   background: url("http://www.templates-preview.com/bootstrap-templates/300111854/images/wave2.png")
     0 0 repeat-x;
+    left:0vw;
+    width: 100vw;
+    position: absolute;
   filter: brightness(15);
 }
