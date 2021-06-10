@@ -19,7 +19,7 @@ var counterSecondi = 5;
 var counterMinuti = 0;
 var intervallo;
 var intervalloAnimazione;
-var pause;
+var pause=0;
 var minuti = document.querySelector('#minuti');
 var secondi = document.querySelector('#secondi');
 var totale;
@@ -36,13 +36,27 @@ function play() {
   audio.play();
 }
 
+function setColor() {
+  var audio = new Audio('levan_polka.mp3');
+  audio.play();
+}
+
+
 function progress(n, callback) {
   IntervalID = setInterval(function (){
     //console.log(ondah + " n:" + n);
+    document.getElementById("start").disabled = true;
+      document.getElementById("stop").disabled = true;
+      document.getElementById("reset").disabled = true;
     if (ondah>n-1 && ondah<n+1) {
+
       console.log(ondah + " n:" + n);
       clearInterval(IntervalID);
+      document.getElementById("stop").disabled = true;
+      document.getElementById("start").disabled = false;
+      document.getElementById("reset").disabled = false;
       callback();
+      
     } else {
       if(ondah>n) ondah-=0.1;
       else ondah += 0.1;
@@ -56,9 +70,11 @@ function progress(n, callback) {
 
 function timer(){
     document.getElementById("stop").disabled = false;
+    document.getElementById("start").disabled = true;
     intervallo = setInterval(function () 
                 {
-                    
+                  document.getElementById("stop").disabled = false;
+                  document.getElementById("start").disabled = true;
                     if(counterSecondi==0){
                         counterSecondi=60;
                         counterMinuti--;
@@ -97,9 +113,9 @@ function timer(){
 
 
 function start() {
-    document.getElementById("start").disabled = true;
-    document.getElementById("stop").disabled = true;
     incrementoOnda = 110/(counterMinuti*60+counterSecondi);
+    if(pause%2==0) document.documentElement.style.setProperty('--status', '#d2f8c6');
+    else  document.documentElement.style.setProperty('--status', '#d2f8c6');
     progress(40, timer);
     //slider.disabled=true;
 
@@ -109,6 +125,7 @@ function stop(){
     document.getElementById("start").disabled = false;
     document.getElementById("stop").disabled = true;
     //slider.disabled=false;
+    document.documentElement.style.setProperty('--status', '#ffcba8');
     clearInterval(intervallo);
     clearInterval(intervalloAnimazione);
 }
@@ -121,9 +138,7 @@ function reset(){
     // }
     stop();
     progress(0,coordina);
-    
-    document.getElementById("start").disabled = false;
-    document.getElementById("stop").disabled = true;
+
 }
 
 function coordina(){
@@ -133,10 +148,9 @@ function coordina(){
   }
   else if(pause%2==0){
     setSecondi(25,0);
-    //document.documentElement.style.setProperty('--background', '#66a188');
+    
   }
   else{
-    //document.documentElement.style.setProperty('--background', '#6dbfc5');
     setSecondi(5,0);
   }
 }
