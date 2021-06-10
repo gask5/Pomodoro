@@ -12,7 +12,7 @@ title {
 }
 
 html {
-  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.425);
+  text-shadow: 0.5vw 0.5vw 2vw rgba(0, 0, 0, 0.425);
 }
 
 body {
@@ -24,22 +24,21 @@ body {
 }
 
 h1 {
+  font-size: 5vh;
   color: rgb(255, 255, 255);
   position: relative;
   text-align: center;
 }
 
 .main {
-  width: 400px;
-  height: 70px;
+  width: 20vw;
+  height: 7vh;
   top: 75%;
   background: rgba(255, 255, 255, 0.151);
   box-shadow: 0 0px 5px 1px rgba(255, 255, 255, 0.103);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border: 2px solid var(--status);
-  margin: 50px auto;
+  border-radius: 1vw;
+  border: 0.1vw solid var(--status);
+  margin: 2vw auto;
   /* max-width: 20%; */
   /* min-width: 20%; */
   transition: border 1s cubic-bezier(1, 1, 1, 1);
@@ -54,7 +53,7 @@ h1 {
 }
 
 #timer {
-  font-size: 100px;
+  font-size: 10vw;
   text-align: center;
   padding: 20px;
   text-shadow: 1px 5px 45px rgb(0, 0, 0);
@@ -108,13 +107,13 @@ h1 {
 .flex-item {
   background: rgba(255, 255, 255, 0.36);
   box-shadow: 0px 0px 15px 2px rgba(255, 255, 255, 0.062);
-  border-radius: 20px;
+  border-radius: 20vw;
   /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
   border: 0px;
-  padding: 10px 20px 10px 20px;
-  margin: 10px;
+  padding: 0.5vw 1vw 0.5vw 1vw;
+  margin: 0.5vw;
   color: white;
-  font-size: 20px;
+  font-size: 2.5vh;
   text-shadow: 0 2px 4px rgb(71 97 206 / 36%);
   order: 0;
   flex-shrink: 3;
@@ -145,14 +144,14 @@ h1 {
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -20px;
-  left: -20px;
+  right: -1vw;
+  left: -1vw;
   transition: 0.5s;
 }
 
 .flex-item:hover span {
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 1.5vw;
+  padding-left: 1.5vw;
 }
 
 .flex-item:hover span:after {
@@ -162,7 +161,7 @@ h1 {
 
 .round {
   width: 20vw;
-  height: 20vw;
+  height: 40vh;
   position: relative;
   top: 30%;
   left: 40%;
@@ -190,22 +189,22 @@ h1 {
 
 .tempo {
   top: 75%;
-  padding: 30px;
+  padding: 1vw;
   justify-content: center;
   display: flex;
 }
 
 .tempopassato {
-  font-size: 80px;
+  font-size: 4vw;
   color: #ffffff;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.205);
 }
 
 .bar {
-  left: 38.9%;
-  width: 20%;
-  height:10px;
-  top: 10px;
+  left: 40vw;
+  width: 20vw;
+  height:1vh;
+  top: 0.1vh;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
 }
@@ -221,37 +220,37 @@ h1 {
 
 .point1 {
   position: absolute;
-  height: 40px;
-  width: 40px;
+  height: 2.1vw;
+  width: 2.1vw;
   top: -150%;
-  left: 0%;
+  left: -0.1vw;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
 }
 .point2 {
   position: absolute;
-  height: 40px;
-  width: 40px;
+  height: 2.1vw;
+  width: 2.1vw;
   top: -150%;
-  left: 33%;
+  left: 6vw;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
 }
 .point3 {
   position: absolute;
-  height: 40px;
-  width: 40px;
+  height: 2.1vw;
+  width: 2.1vw;
   top: -150%;
-  left: 66%;
+  left: 12vw;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
 }
 .point4 {
   position: absolute;
-  height: 40px;
-  width: 40px;
+  height: 2.1vw;
+  width: 2.1vw;
   top: -150%;
-  left: 99%;
+  left: 18vw;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
 }
@@ -310,12 +309,12 @@ h1 {
 
 .wave1,
 .wave2 {
-  height: 150px;
-  position: absolute;
-  width: 100%;
+  height: 15vh;
+  position: relative;
+  width: 100vw;
   z-index: 12;
   left: 0;
-  top: -20px;
+  top: -3vh;
 }
 
 .wave1 {
@@ -334,11 +333,11 @@ h1 {
 .box {
   left: 0;
   bottom: 0;
-  height: 100px;
+  height: 0;
+  max-height: 10vh;
   position: absolute;
-  width: 100%;
+  width: 100vw;
   background-color: #ffffff;
-  filter: blur(0.5px);
 }
 
 @-webkit-keyframes wave-animation1 {
@@ -381,5 +380,5 @@ h1 {
 .wave2 {
   background: url("http://www.templates-preview.com/bootstrap-templates/300111854/images/wave2.png")
     0 0 repeat-x;
-  filter: brightness(15) blur(0.5px);
+  filter: brightness(15);
 }
