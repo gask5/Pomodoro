@@ -330,7 +330,7 @@ h1 {
     background-position: 0 0;
   }
   100% {
-    background-position: 100vw 0;
+    background-position: 160vw 0;
   }
 }
 @-moz-keyframes wave-animation1 {
@@ -338,7 +338,7 @@ h1 {
     background-position: 0 0;
   }
   100% {
-    background-position: 100vw 0;
+    background-position: 160vw 0;
   }
 }
 @-o-keyframes wave-animation1 {
@@ -346,7 +346,7 @@ h1 {
     background-position: 0 0;
   }
   100% {
-    background-position: 100vw 0;
+    background-position: 160vw 0;
   }
 }
 @keyframes wave-animation1 {
@@ -354,16 +354,21 @@ h1 {
     background-position: 0 0;
   }
   100% {
-    background-position: 100vw 0;
+    background-position: 160vw 0;
   }
 }
 
 .wave1 {
   background: url("http://www.templates-preview.com/bootstrap-templates/300111854/images/wave1.png")
   0 0 repeat-x;
+  top:0px;
+  left:0px;
 }
 .wave2 {
   background: url("http://www.templates-preview.com/bootstrap-templates/300111854/images/wave2.png")
   0 0 repeat-x;
+  left:0vw;
+  width: 100%;
+  position: absolute;
   filter: brightness(15);
 }
