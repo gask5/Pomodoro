@@ -33,6 +33,7 @@ var intervalID;
 
 function play() {
   var audio = new Audio('notification.mp3');
+  audio.volume = 0.5;
   audio.play();
 }
 
@@ -133,14 +134,8 @@ function stop() {
 }
 
 function reset() {
-  // while(ondah!=40){
-  //   if(ondah>40) ondah-=1;
-  //   else ondah += 1;
-  //   style.setProperty('--altezza', ondah + '%');
-  // }
   stop();
   progress(0, coordina);
-
 }
 
 function coordina() {
