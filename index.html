@@ -1,59 +1,48 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="main.css">
 <html>
-    <body>
-        <head>
-            <link rel="preconnect" href="https://fonts.gstatic.com">
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <title>Pummadoru</title>
-        </head>
-        <h1>Pumadoru Timer</h1>
 
-        <div class="main">
-            
-            <div class="flexcontainer">
-        
-        <button onclick="start()" class="flex-item" id="start"><span>Start</span></button>
-        
-        <button onclick="stop()" class="flex-item" id="stop"><span>Stop</span></button>
-        
-        <button onclick="reset()" class="flex-item" id="reset"><span>Reset</span></button>
-            </div>
-            
+<body>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <title>Pummadoru</title>
+    </head>
+    <h1>Pumadoru Timer</h1>
+
+    <div class="main">
+
+        <div class="flexcontainer">
+
+            <button onclick="start()" class="flex-item" id="start"><span>Start</span></button>
+
+            <button onclick="stop()" class="flex-item" id="stop"><span>Stop</span></button>
+
+            <button onclick="reset()" class="flex-item" id="reset"><span>Reset</span></button>
         </div>
 
-        <div class="round">
-            <div class="round2">
-                <div class="drop"></div>
-                <div class="wave" id=></div>
-            </div>  
+    </div>
+
+    <div class="round">
+        <div class="round2">
+            <div class="drop"></div>
+            <div class="wave" id=></div>
         </div>
+    </div>
 
-        <div id class="tempo">
-            <div class="tempopassato" id="minuti">25</div>
-            <div class="tempopassato" >:</div>
-            <div class="tempopassato" id="secondi">00</div>
-        </div>
-</div>
+    <div id class="tempo">
+        <div class="tempopassato" id="minuti">25</div>
+        <div class="tempopassato">:</div>
+        <div class="tempopassato" id="secondi">00</div>
+    </div>
+    </div>
 
-<div class="box"><div class="wave2"></div></div>
-    </body>
-    
+    <div class="box">
+        <div class="wave2"></div>
+    </div>
+</body>
 
+<script src="script.js"></script>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-database.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script>
-    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
-
-
-    <script src="script.js"></script>
 </html>
