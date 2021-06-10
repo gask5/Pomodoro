@@ -12,7 +12,7 @@ title {
 }
 
 html {
-  text-shadow: 0 4px 4px rgb(71 97 206 / 36%);
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.425);
 }
 
 body {
@@ -57,7 +57,7 @@ h1 {
   font-size: 100px;
   text-align: center;
   padding: 20px;
-  text-shadow: 1px 1px 45px rgba(255, 255, 255, 0.12);
+  text-shadow: 1px 5px 45px rgb(0, 0, 0);
 }
 
 #start {
@@ -198,7 +198,62 @@ h1 {
 .tempopassato {
   font-size: 80px;
   color: #ffffff;
-  text-shadow: 0 2px 4px rgb(71 97 206 / 36%);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.205);
+}
+
+.bar {
+  left: 38.9%;
+  width: 20%;
+  height:10px;
+  top: 10px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+}
+.bar2 {
+  left: 0;
+  width: 0%;
+  height:10px;
+  
+  position: relative;
+  background-color: rgb(209, 255, 149);
+  transition: width 2s;
+}
+
+.point1 {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: -150%;
+  left: 0%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+}
+.point2 {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: -150%;
+  left: 33%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+}
+.point3 {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: -150%;
+  left: 66%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+}
+.point4 {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: -150%;
+  left: 99%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .wave {

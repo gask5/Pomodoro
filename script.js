@@ -29,6 +29,8 @@ var secondiArg = [];
 var ondah = 0;
 var incrementoOnda = 0;
 var style = document.querySelector('.wave').style;
+var bar2 = document.querySelector('.bar2').style;
+var bar2w = 10;
 var intervalID;
 
 function play() {
@@ -81,6 +83,8 @@ function timer() {
       counterSecondi = 60;
       counterMinuti--;
     }
+
+    if(pause % 2 != 0) bar2.width = (bar2w += 0.08) + '%';
 
     counterSecondi--;
     if (counterSecondi < 10) secondi.textContent = "0" + counterSecondi;
