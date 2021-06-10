@@ -63,11 +63,11 @@ function progress(n, callback) {
       callback();
 
     } else {
-      if (ondah > n) ondah -= 0.1;
-      else ondah += 0.1;
+      if (ondah > n) ondah -= 0.5;
+      else ondah += 0.5;
       style.setProperty('--altezza', ondah + '%');
     }
-  }, 1);
+  }, 10);
 }
 
 
@@ -108,11 +108,11 @@ function timer() {
     , 1000);
 
   intervalloAnimazione = setInterval(function () {
-    ondah -= incrementoOnda / 200;
+    ondah -= incrementoOnda / 100;
     console.log(ondah);
     style.setProperty('--altezza', ondah + '%');
   }
-    , 5);
+    , 10);
 }
 
 
