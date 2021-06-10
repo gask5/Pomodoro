@@ -213,45 +213,31 @@ h1 {
   height:1vh;
   
   position: relative;
-  background-color: rgb(209, 255, 149);
+  background-color: #d5f4ff;
   transition: width 2s;
 }
 
-.point1 {
-  position: absolute;
+.point1,.point2,.point3,.point4 {
+  transition: background-color 1s cubic-bezier(1, 1, 1, 1);
   height: 4vh;
   width: 4vh;
-  top: -150%;
-  left: -1%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: -150%;
+}
+
+.point1 {
+  left: -1%;
 }
 .point2 {
-  position: absolute;
-  height: 4vh;
-  width: 4vh;
-  top: -150%;
   left: 30%;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 1);
 }
 .point3 {
-  position: absolute;
-  height: 4vh;
-  width: 4vh;
-  top: -150%;
   left: 60%;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 1);
 }
 .point4 {
-  position: absolute;
-  height: 4vh;
-  width: 4vh;
-  top: -150%;
   left: 91%;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 1);
 }
 
 .wave {
@@ -335,7 +321,7 @@ h1 {
   height: 0;
   max-height: 10vh;
   position: absolute;
-  width: 100vw;
+  width: 120vw;
   background-color: #ffffff;
 }
 
@@ -344,7 +330,7 @@ h1 {
     background-position: 0 0;
   }
   100% {
-    background-position: 160vw 0;
+    background-position: 100vw 0;
   }
 }
 @-moz-keyframes wave-animation1 {
@@ -352,7 +338,7 @@ h1 {
     background-position: 0 0;
   }
   100% {
-    background-position: 160vw 0;
+    background-position: 100vw 0;
   }
 }
 @-o-keyframes wave-animation1 {
@@ -360,7 +346,7 @@ h1 {
     background-position: 0 0;
   }
   100% {
-    background-position: 160vw 0;
+    background-position: 100vw 0;
   }
 }
 @keyframes wave-animation1 {
@@ -368,21 +354,16 @@ h1 {
     background-position: 0 0;
   }
   100% {
-    background-position: 160vw 0;
+    background-position: 100vw 0;
   }
 }
 
 .wave1 {
   background: url("http://www.templates-preview.com/bootstrap-templates/300111854/images/wave1.png")
-    0 0 repeat-x;
-    top:0px;
-  left:0px;
+  0 0 repeat-x;
 }
 .wave2 {
   background: url("http://www.templates-preview.com/bootstrap-templates/300111854/images/wave2.png")
-    0 0 repeat-x;
-    left:0vw;
-    width: 100vw;
-    position: absolute;
-  /* filter: brightness(15); */
+  0 0 repeat-x;
+  filter: brightness(15);
 }
