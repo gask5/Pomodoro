@@ -9,33 +9,36 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <title>Pummadoru</title>
     </head>
-    <h1>Pumadoru Timer</h1>
+    <div class="titlecontainer"><h1>Pomodoro Timer</h1><div class="tomatoicon"><img style='height: 4vh; width: 4vh;' src="https://icons555.com/images/icons-gray/image_icon_tomato_pic_512x512.png"></div></div>
+    
+    <div class="card">
+        <div class="main">
 
-    <div class="main">
-
-        <div class="flexcontainer">
-
-            <button onclick="start()" class="flex-item" id="start"><span>Start</span></button>
-
-            <button onclick="stop()" class="flex-item" id="stop"><span>Stop</span></button>
-
-            <button onclick="reset()" class="flex-item" id="reset"><span>Reset</span></button>
+            <div class="flexcontainer">
+    
+                <button onclick="start()" class="flex-item" id="start"><span>Start</span></button>
+    
+                <button onclick="stop()" class="flex-item" id="stop"><span>Stop</span></button>
+    
+                <button onclick="reset()" class="flex-item" id="reset"><span>Reset</span></button>
+            </div>
+    
         </div>
-
-    </div>
-
-    <div class="round">
-        <div class="round2">
-            <div class="drop"></div>
-            <div class="wave" id=></div>
+    
+        <div class="round">
+            <div class="round2">
+                <div class="drop"></div>
+                <div class="wave" id=></div>
+            </div>
+        </div>
+    
+        <div id class="tempo">
+            <div class="tempopassato" id="minuti">25</div>
+            <div class="tempopassato">:</div>
+            <div class="tempopassato" id="secondi">00</div>
         </div>
     </div>
-
-    <div id class="tempo">
-        <div class="tempopassato" id="minuti">25</div>
-        <div class="tempopassato">:</div>
-        <div class="tempopassato" id="secondi">00</div>
-    </div>
+    
 
     <div class="bar">
         <div class="bar2"></div>
