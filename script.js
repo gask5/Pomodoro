@@ -1,19 +1,3 @@
-//firebase
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-//   var firebaseConfig = {
-//     apiKey: "AIzaSyBNNR8r9-8tZVMEvad3pysAak7rRwyE74M",
-//     authDomain: "pomodoro-305ca.firebaseapp.com",
-//     projectId: "pomodoro-305ca",
-//     storageBucket: "pomodoro-305ca.appspot.com",
-//     messagingSenderId: "725169921267",
-//     appId: "1:725169921267:web:e73d9f971747be517b2b86",
-//     measurementId: "G-ZDJHE6DGL8"
-//   };
-//   // Initialize Firebase
-//   firebase.initializeApp(firebaseConfig);
-//   firebase.analytics();
-// //firebase
 var tempo = 0;
 var counterSecondi = 5;
 var counterMinuti = 0;
@@ -23,8 +7,7 @@ var pause = 0;
 var minuti = document.querySelector('#minuti');
 var secondi = document.querySelector('#secondi');
 var totale;
-// var IEM, Archietettura, Analisi1, Analisi2, Fondamenti, Discreta, Prog2, Algoritmi, Database, Reti, Os;
-// var arg = ['Interazione e Multimedia', 'Architettura', 'Analisi 1', 'Analisi 2', 'Fondamenti', 'Discreta', 'Prog 2', 'Alogritmi', 'Database', 'Reti', 'Sistemi operativi'];
+
 var secondiArg = [];
 var ondah = 0;
 var incrementoOnda = 0;
